@@ -3,31 +3,21 @@ html{
     -ms-text-size-adjust: 100%;
     height: 100%;
     margin: 0;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Arial', cursive;
 }
 body{
-    background: #c1c1c1;
-    background: -webkit-linear-gradient(#c1c1c1, white, #c1c1c1);
-    background: -o-linear-gradient(#c1c1c1, white, #c1c1c1);
-    background: -moz-linear-gradient(#c1c1c1, white, #c1c1c1);
-    background: linear-gradient(#c1c1c1, white, #c1c1c1);
+    background: black;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    margin-top: 100px;
+    margin-left: -100px;
+    margin-bottom:100px;
+
 }
-a{
-    color: #b10000;
-    text-decoration: none;
-}
-    a:hover{
-        text-decoration: underline;
-    }
-    a:visited{
-        color: #b10000;
-    }
-body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr1000, #introPage, #introText, #introText p, #sp, #sp1, #multiPage, #singlePage #wordWrap, #wordWrap div, #restriction, #gamePage, #letterBank div, #fr1000Bank div, #videoPage{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#introPage, #singlePage, #multiPage, #videoPage{
+
+
+#introPage, #singlePage, {
     position: absolute;
     top: 0;
     right: 0;
@@ -45,10 +35,11 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         height: 260px;
         margin: 10px auto;
     }
-    #introText p, #multiText p{
+    #introText p{
         font-size: 40px;
         text-align: center;
         margin: 0 auto 20px auto;
+        color:white;
     }
 
 /*These CSS styles control the front page buttons*/
@@ -69,8 +60,8 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         cursor: pointer;
     }
     #sp{
-        float:left;
-        margin-left:125px;
+
+        margin-left:30%;
     }
     #sp1{
         margin: 69px 20px 0 0;
@@ -78,13 +69,15 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
 
     #homeHangman, #hangman{
         display: block;
-        margin: 50px auto 0 auto;
-        border: 1px solid black;
+        margin: 100px auto 0 260px;
+        border: 3px solid white;
     }
+
 #singlePage{
     display: none;
-    height: 560px;
-    width: 845px;
+    color:white;
+
+
 }
     #singlePage p{
         font-size: 40px;
@@ -125,45 +118,47 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
     }
     #frys700{
         background: #000081;
-        background: -webkit-linear-gradient(left, #000081, white);
-        background: -o-linear-gradient(left, #000081, white);
-        background: -moz-linear-gradient(left, #000081, white);
-        background: linear-gradient(to right, #000081, white);
+        background: -webkit-linear-gradient(left, #000081, black(2, 0, 0));
+        background: -o-linear-gradient(left, #000081, black);
+        background: -moz-linear-gradient(left, #000081, black);
+        background: linear-gradient(to right, #000081, black);
+        border-width: 4px;
+        border-color: white;
     }
     #frys800{
         background: #147b14;
-        background: -webkit-linear-gradient(left, white, #147b14);
-        background: -o-linear-gradient(right, white, #147b14);
-        background: -moz-linear-gradient(right, white, #147b14);
-        background: linear-gradient(to right, white, #147b14);
+        background: -webkit-linear-gradient(left, black, #147b14);
+        background: -o-linear-gradient(right, black, #147b14);
+        background: -moz-linear-gradient(right, black, #147b14);
+        background: linear-gradient(to right, black, #147b14);
+        border-width: 4px;
+        border-color: white;
     }
     #frys900{
         background: #bc7a00;
-        background: -webkit-linear-gradient(left, #bc7a00, white);
-        background: -o-linear-gradient(left, #bc7a00, white);
-        background: -moz-linear-gradient(left, #bc7a00, white);
-        background: linear-gradient(to right, #bc7a00, white);
+        background: -webkit-linear-gradient(left, #bc7a00, black);
+        background: -o-linear-gradient(left, #bc7a00, black);
+        background: -moz-linear-gradient(left, #bc7a00, black);
+        background: linear-gradient(to right, #bc7a00, black);
+        border-width: 4px;
+        border-color: white;
     }
     #fr1000{
         background: #b10000;
-        background: -webkit-linear-gradient(left, white, #b10000);
-        background: -o-linear-gradient(right, white, #b10000);
-        background: -moz-linear-gradient(right, white, #b10000);
-        background: linear-gradient(to right, white, #b10000);
+        background: -webkit-linear-gradient(left, black, #b10000);
+        background: -o-linear-gradient(right, black, #b10000);
+        background: -moz-linear-gradient(right, black, #b10000);
+        background: linear-gradient(to right, black, #b10000);
+        border-width: 4px;
+        border-color: white;
     }
-#multiPage{
-    display: none;
-    height: 490px;
-    width: 845px;
-}    
+   
     #wordInput{
         width: 845px;
         height: 350px;
         margin: 0px auto;
     }
-    #multiText p{
-        font-size: 29px;
-    }
+
     #input{
         font-family: sans-serif;
         display: block;
@@ -207,8 +202,9 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
 }
     #categoryName{
         width: 100%;
-        margin: 20px auto 0px auto;
+        margin: 20px 200px 0px -150px;
         font-size: 75px;
+        color:white
     }    
     #wordWrap{
         display: inline-block;
@@ -224,6 +220,9 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         text-align: center;
         font-size: 50px;
         line-height: 60px;
+        color:red;
+        border-bottom:3px;
+        border-bottom-color:white;
     }
     #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
         display: none;
@@ -231,6 +230,8 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         width: 50px;
         height: 60px;
         margin-right: 5px;
+        border-bottom:3px;
+        border-bottom-color:white;
     }
     #letterBank, #fr1000Bank{
         width: 780px;
@@ -239,9 +240,7 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         font-size: 50px;
         line-height: 60px;
         text-align: center;
-        -webkit-user-select: none;        
-        -moz-user-select: none;
-        -ms-user-select: none;
+
     }
     #letterBank div, #fr1000Bank div{
         float: left;
@@ -285,45 +284,14 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
     #home1{
         margin-top: 32px;
     }
-    #vidSent{
-        display: none;
-        margin-bottom: 100px;
-        font-size: 30px;
-    }
+
 #fr1000Game{
     text-align: center;
 }
-#videoPage{
-    display: none;
-    height: 690px;
-    width: 845px;
-}
-    #vidHead, #vidCaption{
-        margin: 20px auto 10px auto;
-        font-size: 60px;
-        text-align: center;
-    }
-    #vidCaption{
-        margin-top: 10px;
-        font-size: 25px;
-    }
-    #video, #videoTab, #videoMob{
-        display: block;
-        margin: 0 auto;
-    }
-    #videoTab, #videoMob{
-        display: none;
-    }
-    #vidLink{
-        color: #b10000;
-    }
-    #vidLink:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
+
 
 @media (max-width: 866px){
-    #introPage, #singlePage, #multiPage, #videoPage{
+    #introPage, #singlePage{
         width: 500px;
         height: 500px;
     }
@@ -331,7 +299,7 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             width: 500px;
             height: 85px;
         }
-        #introText p, #multiText p{
+        #introText p{
             font-size: 25px;
             margin: 10px auto;
         }
@@ -378,16 +346,12 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             font-size: 35px;
             line-height: 80px;
         }
-    #multiPage{
-        height: 350px;
-    }    
+    
         #wordInput{
             height: 250px;
             width: 100%;
         }
-        #multiText p{
-            font-size: 17.6px;
-        }
+
         #input{
             font-size: 20px;
         }
@@ -408,8 +372,7 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             height: 30px;
             line-height: 30px;
         }
-    #gamePage{
-    }
+
         #categoryName{
             margin: 0 auto;
             font-size: 30px;
@@ -425,11 +388,18 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             height: 45px;
             font-size: 30px;
             line-height: 45px;
+            border-bottom:3px;
+            border-bottom-color:white;
+
         }
         #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
             width: 28px;
             height: 45px;
             margin-right: 3px;
+            border-bottom:3px;
+            border-bottom-color:white;
+
+
         }
         #hangman{
             margin: 20px auto 0 auto;
@@ -474,46 +444,24 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         #home{
             margin-top: 0px;
         }
-        #vidSent{
-            margin-bottom: 50px;
-            font-size: 25px;
-        }
+
     #fr1000Game{
         text-align: center;
     }
-    #videoPage{
-        display: none;
-        height: 450px;
-    }
-        #vidHead, #vidCaption{
-            margin: 0 auto 10px auto;
-            font-size: 30px;
-            text-align: center;
-        }
-        #vidCaption{
-            margin-top: 10px;
-            font-size: 15px;
-        }
-        #video, #videoTab, #videoMob{
-            display: block;
-        }
-        #video, #videoMob{
-            display: none;
-        }
+
 }
 
 @media (max-width: 500px){
-    #introPage, #singlePage, #multiPage, #videoPage{
+    #introPage, #singlePage{
         height: 100%;
         width: 100%;
         min-width: 365px;
     }
-    #introPage{
-    }
+
         #introText{
             width: 100%;
         }
-        #introText p, #multiText p{
+        #introText p{
             font-size: 18px;
         }
         #buttonContainer{
@@ -544,12 +492,8 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         #singlePage p{
             font-size: 25px;
         }
-    #multiPage{
-        height: 330px;
-    }    
-        #multiText p{
-            font-size: 16px;
-        }
+   
+
         #input{
             padding: 5px;
             font-size: 15px;
@@ -572,7 +516,7 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
         }
     #gamePage{
         min-width: 365px;
-    }
+         }
         #categoryName{
             font-size: 30px;
         }    
@@ -588,11 +532,15 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             text-align: center;
             font-size: 18px;
             line-height: 30px;
+            border-bottom:3px;
+            border-bottom-color:white;
         }
         #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
             width: 18px;
             height: 30px;
             margin-right: 3px;
+            border-bottom:3px;
+            border-bottom-color:white;
         }
         #letterBank, #fr1000Bank{
             width: 310px;
@@ -622,29 +570,7 @@ body, html, #category, #category1, #category2, #frys700, #frys800, #frys900, #fr
             font-size: 26px;
             line-height: 45px;
         }
-        #vidSent{
-            margin-bottom: 30px;
-            font-size: 16px;
-        }
-    #videoPage{
-        display: none;
-        height: 320px;
-    }
-        #vidHead, #vidCaption{
-            margin: 0 auto 10px auto;
-            font-size: 30px;
-            text-align: center;
-        }
-        #vidCaption{
-            margin-top: 10px;
-            font-size: 13px;
-        }
-        #video, #videoTab, #videoMob{
-            display: block;
-        }
-        #video, #videoTab{
-            display: none;
-        }
+
 }
 
 @media (max-width: 450px){

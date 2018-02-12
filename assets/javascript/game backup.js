@@ -4,56 +4,47 @@ var numWrong = 0;
 var numRight = 0;
 var phraseLength = 0;
 var numChar = 0;
-var frys700 = ["cross", "buy", "temperature", "possible", "fraction", "speak", "century", "bright", "gold", "Africa", "solve", "outside", "lead", "milk", "killed", "appear", "everything", "everyone", "quiet", "melody", "metal", "tall", "method", "natural", "bottom", "son", "already", "section", "lot", "trip", "either", "instead", "lake", "stone", "hole", "ice", "phrase", "consonant", "act", "poor", "sleep", "soil", "within", "build", "let", "village", "bed", "dictionary", "middle", "fight", "factors", "copy", "hair", "speed", "surprise", "result", "free", "age", "count", "French", "jumped", "hope", "amount", "cat", "died", "snow", "spring", "someone", "beat", "ride", "case", "pounds", "sail", "exactly", "care", "laughed", "although", "rolled", "remain", "floor", "nation", "per", "bear", "dress", "hill", "quite", "broken", "wonder", "iron", "pushed", "type", "moment", "smiled", "could", "baby", "themselves", "tiny", "angle", "fingers"];     
-var frys800 = ["row","grew", "east", "suppose", "direct", "least", "skin", "pay", "woman", "ring", "catch", "valley", "single", "coast", "serve", "climbed", "cents", "touch", "bank", "child", "wrote", "key", "information", "period", "desert", "shouted", "president", "express", "wire", "increase", "continued", "brown", "mouth", "choose", "history", "itself", "trouble", "yard", "clean", "cost", "else", "cool", "equal", "visit", "maybe", "plains", "cloud", "decimal", "bit", "business", "gas", "lose", "yourself", "whose", "separate", "England", "sent", "control", "received", "break", "burning", "symbols", "practice", "garden", "uncle", "design", "wear", "report", "please", "hunting", "joined", "bad ", "straight", "strange", "flow", "foot", "save", "rise", "caught", "lady", "law", "experiment", "statement", "fell", "students", "ears", "engine", "stick", "team", "human", "grass", "alone", "party", "God", "art", "you", "drawing", "seeds", "captain", "feeling"];
-var frys900 = ["supply", "fit", "sense", "position", "meat", "corner", "addition", "string", "entered", "lifted", "electric", "belong", "blow", "fruit", "process", "insects", "safe", "famous", "tied", "army", "crops", "soldiers", "value", "rich", "hat", "tone", "guess", "wings", "dollars", "property", "hit", "silent", "movement", "send", "particular ", "sand", "trade", "pole", "sight", "swim", "doctor", "rather", "exciting", "chief", "terms", "provide", "compare", "branches", "Japanese", "current", "thus", "crowd", "thick", "stream", "park", " will", "poem", "blood", "planets", "sell", "cook", "enjoy", "lie", "rhythm", "shoulder", "bones", "elements", "spot", "eight", "industry",  "tail", "indicate", "bell", "science", "wash", "board", "except", "fun", "major", "block", "modern", "expect", "loud", "observe", "spread", "compound", "flat", "consider", "tube", "cattle", "mine", "seven", "suggested", "necessary", "wife", "was ", "interesting", "thin", "weight", "sharp"];
-var frys1000 = ["Unbelieveable","company", " radio", " we", "action", "capital", "factories", "settled", "yellow", "not", "southern", "truck", "fair", "printed", "would", "ahead", "chance", "born", "level", "triangle", "molecules", "France", "repeated", "column", "western", "church", "sister", "oxygen", "plural", "various", "agreed", "opposite", "wrong", "chart", "prepared", "pretty", "solution", "fresh", "shop", "suffix", "especially", "shoes", "actually", "nose", "afraid", "dead", "sugar", "adjective", "fig", "office", "huge", "gun", "similar", "death", "score", "forward", "stretched", "experience", "rose", "allow", "fear", "workers ", "Washington ", "Greek ", "women ", "bought ", "led ", "march ", "northern ", "create ", "British ", "difficult ", "match ", "win ", "doesn’t ", "steel ", "total ", "deal ", "determine ", "evening ", "nor ", "rope ", "cotton ", "apple ", "details ", "entire ", "corn ", "substance ", "smell ", "tools ", "conditions ", "cows ", "track ", "arrived ", "located ", "sir ", "seat ", "division ", "effect ", "underline ", "view"];
+var frys700 = ["Enquiry", "Extraordinary"];     
+var frys800 = ["Tesselation", "Important"];
+var frys900 = ["Imitate", "Ridiculous", "Acrobat"];
+var frys1000 = ["Unbelieveable", "Trial", "Volcano"];
 
 function sp(){
     document.getElementById('introPage').style.display = "none";
     document.getElementById('singlePage').style.display = "block";
-    
 }
 
 function fr700(){
     rand = Math.floor(Math.random()*frys700.length);
     word = frys700[rand];
     document.getElementById('singlePage').style.display = "none";
-    document.getElementById('categoryName').innerHTML = "Do you know Fry's 7th 100 Words?";
-    draw();
+    document.getElementById('categoryName').innerHTML = "Do you know Fry's 7th 100 Words";
     hangman();
-    
 }
 
 function fr800(){
     rand = Math.floor(Math.random()*frys800.length);
     word = frys800[rand];
     document.getElementById('singlePage').style.display = "none";
-    document.getElementById('categoryName').innerHTML = "Do you know Fry's 8th 100 Words?";
-    draw();
+    document.getElementById('categoryName').innerHTML = "Do you know Fry's 8th 100 Words";
     hangman();
-
 }
 
 function fr900(){
     rand = Math.floor(Math.random()*frys900.length);
     word = frys900[rand];
     document.getElementById('singlePage').style.display = "none";
-    document.getElementById('categoryName').innerHTML = "Do you know Fry's 9th 100 Words?";
-    draw();
+    document.getElementById('categoryName').innerHTML = "Do you know Fry's 9th 100 Words";
     hangman();
-
 }
 
 function fr1000(){
     rand = Math.floor(Math.random()*frys1000.length);
     word = frys1000[rand];
     document.getElementById('singlePage').style.display = "none";
-    document.getElementById('categoryName').innerHTML = "Do you know Fry's 10th 100 Words?";
-draw();
-hangman();
+    document.getElementById('categoryName').innerHTML = "Do you know Fry's 10th 100 Words";
+    hangman();
 }
-    
 
 //This is the code that controls the single player and multiplayer pages
 function hangman(){
@@ -229,20 +220,7 @@ function splitWords(){
             countBack--;
         }
     }
-    for(x=0;x<8;x++){
-        countBack = 15+placeKeep;
-        if(numChar > countBack){
-            while(countBack > 1){
-                if(document.getElementById('letter'+countBack).innerHTML == "&nbsp;"){
-                    document.getElementById('underline'+countBack).style.width = (document.getElementById('underline1').offsetWidth*((16+placeKeep)-countBack))+"px";
-                    placeKeep = countBack;
-                    countBack = 0;
-                }
-                countBack--;
-            }
-        }
-    }
-    
+       
 }
 
 //THe guess code is now working

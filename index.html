@@ -33,38 +33,18 @@
         <div id="categoryHolder">
             <div id="category">
                 <div id="category1">
-                    <div id="frys700" onclick="fr700()">Frys700</div>
-                    <div id="frys800" onclick="fr800()">Frys800</div>
+                    <div id="frys700" onclick="fr700()">Fry's 700</div>
+                    <div id="frys800" onclick="fr800()">Fry's 800</div>
                 </div>
                 <div id="category2">
-                    <div id="frys900" onclick="fr900()">Frys900</div>
-                    <div id="fr1000" onclick="fr1000()">Frys1000</div>
+                    <div id="frys900" onclick="fr900()">Fry's 900</div>
+                    <div id="fr1000" onclick="fr1000()">Fry's 1000</div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="multiPage">
-        <div id="wordInput">
-            <div id="multiText">
-                <p>The fr700 guesser should look away from the screen now.</p>
-                <p>Phrase creator, type your fr700 and click submit!</p>
-            </div>
-            <div id="inputContainer">
-                <textarea id="input" cols="40" rows="5" onkeyup="countChars('input','charcount');" onkeydown="countChars('input','charcount');"
-                    onmouseout="countChars('input','charcount');"></textarea>
-                <span id="restriction">Only special characters allowed:
-                    <span style="font-weight: 700;">? ! , . ' &ndash;</span>
-                </span>
-            </div>
-            <div id="characterCount">
-                <p id="charContain">
-                    <span id="charcount">0</span>/100 characters
-                </p>
-                <div id="submit" onclick="readText()">Submit</div>
-            </div>
-            <div id="sp1" onclick="sp()">Single player</div>
-        </div>
-    </div>
+    
+
     <div id="gamePage">
         <p id="categoryName"></p>
         <div id="wordWrap">
@@ -399,38 +379,9 @@
             <div id="y" value="Y" onclick="guessLetter()">Y</div>
             <div id="z" value="Z" onclick="guessLetter()">Z</div>
         </div>
-        <div id="fr1000Bank">
-            <div id="a" value="A" onclick="fr1000Guess()">A</div>
-            <div id="b" value="B" onclick="fr1000Guess()">B</div>
-            <div id="c" value="C" onclick="fr1000Guess()">C</div>
-            <div id="d" value="D" onclick="fr1000Guess()">D</div>
-            <div id="e" value="E" onclick="fr1000Guess()">E</div>
-            <div id="f" value="F" onclick="fr1000Guess()">F</div>
-            <div id="g" value="G" onclick="fr1000Guess()">G</div>
-            <div id="h" value="H" onclick="fr1000Guess()">H</div>
-            <div id="i" value="I" onclick="fr1000Guess()">I</div>
-            <div id="j" value="J" onclick="fr1000Guess()">J</div>
-            <div id="k" value="K" onclick="fr1000Guess()">K</div>
-            <div id="l" value="L" onclick="fr1000Guess()">L</div>
-            <div id="m" value="M" onclick="fr1000Guess()">M</div>
-            <div id="n" value="N" onclick="fr1000Guess()">N</div>
-            <div id="o" value="O" onclick="fr1000Guess()">O</div>
-            <div id="p" value="P" onclick="fr1000Guess()">P</div>
-            <div id="q" value="Q" onclick="fr1000Guess()">Q</div>
-            <div id="r" value="R" onclick="fr1000Guess()">R</div>
-            <div id="s" value="S" onclick="fr1000Guess()">S</div>
-            <div id="t" value="T" onclick="fr1000Guess()">T</div>
-            <div id="u" value="U" onclick="fr1000Guess()">U</div>
-            <div id="v" value="V" onclick="fr1000Guess()">V</div>
-            <div id="w" value="W" onclick="fr1000Guess()">W</div>
-            <div id="x" value="X" onclick="fr1000Guess()">X</div>
-            <div id="y" value="Y" onclick="fr1000Guess()">Y</div>
-            <div id="z" value="Z" onclick="fr1000Guess()">Z</div>
-        </div>
+
         <div id="again" onClick="reset()">Play again!</div>
         <div id="home" onClick="window.location.reload()">Main menu</div>
-        <p id="vidSent">Click
-            <span id="vidLink" onClick="video()">here</span> to watch and learn how this website functions.</p>
     </div>
     
 </body>
