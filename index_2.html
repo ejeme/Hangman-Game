@@ -17,36 +17,33 @@
 <body>
     <div id="introPage">
         <div id="introText">
-            <p>Welcome to Ejeme's Hangman!</p>
+            <p>Welcome to Hangman!</p>
             <p>Click the "Play Now" button to begin!</p>
             <div id="buttonContainer">
                 <div id="sp" onclick="sp()">Play Now!</div>
-        <div>
-        <img id="hangman-image" img src="./assets/images/hangman.jpg" alt="Hangman Pic" width="500px">
+            </div>
         </div>
+        <canvas id="homeHangman" width="300px" height="300px"></canvas>
     </div>
-</div>
-</div>
 
-    <!-- The singlePage block of code is coming from the onclick="sp()" function that triggers the javascript document.getElementById function. -->
+<!-- The singlePage block of code is coming from the onclick="sp()" function that triggers the javascript document.getElementById function. -->
 
     <div id="singlePage">
         <p>Pick a category:</p>
         <div id="categoryHolder">
-
             <div id="category">
-                <div class = "row" id ="category1">
-                    <div class = "col-sm-6" id="frys700" onclick="fr700()">Fry's 700</div>
-                    <div class = "col-sm-6" id="frys800" onclick="fr800()">Fry's 800</div>
+                <div id="category1">
+                    <div id="frys700" onclick="fr700()">Fry's 700</div>
+                    <div id="frys800" onclick="fr800()">Fry's 800</div>
                 </div>
-                <div class = "row" id="category2">
-                    <div class = "col-sm-6" id="frys900" onclick="fr900()">Fry's 900</div>
-                    <div class = "col-sm-6" id="fr1000" onclick="fr1000()">Fry's 1000</div>
+                <div id="category2">
+                    <div id="frys900" onclick="fr900()">Fry's 900</div>
+                    <div id="fr1000" onclick="fr1000()">Fry's 1000</div>
                 </div>
             </div>
         </div>
     </div>
-
+    
 
     <div id="gamePage">
         <p id="categoryName"></p>
@@ -386,7 +383,7 @@
         <div id="again" onClick="reset()">Play again!</div>
         <div id="home" onClick="window.location.reload()">Main menu</div>
     </div>
-
+    
 </body>
 
 </html>

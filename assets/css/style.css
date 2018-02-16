@@ -67,11 +67,19 @@ body{
         margin: 69px 20px 0 0;
     }
 
-    #homeHangman, #hangman{
+     #hangman{
         display: block;
         margin: 100px auto 0 260px;
         border: 3px solid white;
     }
+
+    #hangman-image{
+        display:block;
+        margin:auto;
+        margin-top: 50px;
+        border: 6px solid red;     
+    }
+
 
 #singlePage{
     display: none;
@@ -318,9 +326,7 @@ body{
             margin: 25px 10px auto auto;
         }
 
-        #homeHangman{
-            margin: 100px auto 0 auto;
-        }
+
     #singlePage{
         height: 345px;
     }
@@ -478,9 +484,7 @@ body{
             margin: 20px 10px auto auto;
         }
 
-        #homeHangman{
-            margin: 70px auto 0 auto;
-        }
+
     #singlePage{
         height: 320px;
     }
